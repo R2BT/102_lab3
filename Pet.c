@@ -20,19 +20,16 @@ int main()
     }
     i=0;
     j=1;
-     while(j<5)
+     while(i<5)
      {
-        if(sum[i]>sum[j])
+        if(max<sum[i])
         {
-            j++;
+            max=sum[i];
+            player=i+1;
         }
-        else
-        {
-            i++;
-            j=i+1;
-        }
+        i++;
      }
-    printf("%d %d",i+1,sum[i]);
+    printf("%d %d",player,max);
 
     return 0;
 }
