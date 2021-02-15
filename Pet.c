@@ -16,10 +16,8 @@ int main()
         {
             sum[i]+=score[i][j];
         }
-        printf("%d\n",sum[i]);
     }
     i=0;
-    j=1;
      while(i<5)
      {
         if(max<sum[i])
